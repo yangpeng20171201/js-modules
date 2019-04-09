@@ -1,0 +1,10 @@
+2009年，有人讨论将 JavaScript 引入服务器端。因此 ServerJS 诞生了。随后，ServerJS 将其名称改为 CommonJS 。
+
+CommonJS 不是一个 JavaScript 库。它是一个标准化组织。它就像 ECMA 或 W3C 一样。ECMA 定义了 JavaScript 的语言规范。W3C定义了 JavaScript web API ，比如 DOM 或 DOM 事件。 CommonJS 的目标是为 web 服务器、桌面和命令行应用程序定义一套通用的 API 。
+
+CommonJS 还定义了模块 API 。因为在服务器应用程序中没有 HTML 页面和 </script><script> 标签，所以为模块提供一些清晰的 API 是很
+
+//Browserify 是一个命令行工具，需要 NodeJS 和 NPM 来安装它
+$ npm install -g browserify
+//Browserify 解析 main.js 中的 require() 函数调用，并遍历项目中的依赖树。然后将依赖树打包到一个文件中。
+$ browserify main.js -o bundle.js
